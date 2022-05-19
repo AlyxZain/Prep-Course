@@ -245,21 +245,12 @@ function mesesDelAño(array) {
     }
   }
 
-  for(var i = 0; i < save.length; i++)
+  if(save.length === 3)
   {
-    if(save[i] === "Marzo")
-    {
-      if(save[i+1] === "Noviembre")
-      {
-        if(save[i+2] === "Enero")
-        {
-          return save;
-        }else
-        {
-          return "No se encontraron los meses pedidos";
-        }
-      }
-    }
+    return save;
+  }else
+  {
+    return "No se encontraron los meses pedidos";
   }
 
 }
